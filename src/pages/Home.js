@@ -1,29 +1,28 @@
 import React from "react";
-import { Mail, Linkedin, Phone, Github } from "lucide-react"; // added Github
+import { Mail, Linkedin, Phone, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import abhi from "../assets/abhi.jpg";
 
 function Home() {
   return (
     <div
-      className="min-h-screen text-white flex flex-col items-center justify-center px-6"
+      className="min-h-screen text-white flex flex-col items-center justify-start md:justify-center px-6 pt-10 md:pt-0"
       style={{
-        background:
-          "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2c2e 100%)",
+        background: "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2c2e 100%)",
       }}
     >
-      {/* Avatar with simple fade + scale + hover */}
+      {/* Avatar */}
       <motion.img
         src={abhi}
         alt="Avatar"
-        className="w-28 h-28 rounded-full object-cover shadow-lg bg-white mb-6 cursor-pointer"
+        className="w-28 h-28 rounded-full object-cover shadow-lg bg-white mb-6 cursor-pointer mt-24 md:mt-0"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
         whileHover={{ scale: 1.1 }}
       />
 
-      {/* Name with gradient text hover */}
+      {/* Name */}
       <motion.h1
         className="text-2xl md:text-3xl font-semibold text-center mb-2 cursor-pointer bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
         initial={{ opacity: 0, y: -10 }}
@@ -38,6 +37,7 @@ function Home() {
         Abhishek Appuhamy
       </motion.h1>
 
+      {/* Bio */}
       <motion.p
         className="text-gray-400 text-center mb-10 max-w-xl"
         initial={{ opacity: 0, y: -10 }}
@@ -61,10 +61,7 @@ function Home() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 10px #25D366",
-          }}
+          whileHover={{ scale: 1.05, boxShadow: "0 0 10px #25D366" }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -79,10 +76,7 @@ function Home() {
         <motion.a
           href="mailto:abhixhek103@gmail.com"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 10px #00C6FF",
-          }}
+          whileHover={{ scale: 1.05, boxShadow: "0 0 10px #00C6FF" }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -99,10 +93,7 @@ function Home() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 10px #0077B5",
-          }}
+          whileHover={{ scale: 1.05, boxShadow: "0 0 10px #0077B5" }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -115,13 +106,11 @@ function Home() {
 
         {/* GitHub */}
         <motion.a
-          href="https://github.com/AbhishekAppuhamyy" 
+          href="https://github.com/AbhishekAppuhamyy"
+          target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 10px #ffffff",
-          }}
+          whileHover={{ scale: 1.05, boxShadow: "0 0 10px #ffffff" }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >

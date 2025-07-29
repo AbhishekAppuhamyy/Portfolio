@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import abhi from "../assets/abhi.jpg";
 
-
 function About() {
   return (
     <div
@@ -16,7 +15,7 @@ function About() {
       <motion.img
         src={abhi}
         alt="Avatar"
-        className="w-28 h-28 rounded-full object-cover shadow-lg bg-white mb-6 cursor-pointer"
+        className="w-28 h-28 rounded-full object-cover shadow-lg bg-white mb-6 cursor-pointer mt-20 md:mt-0"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
