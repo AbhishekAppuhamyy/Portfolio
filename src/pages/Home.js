@@ -57,7 +57,7 @@ function Home() {
       >
         {/* WhatsApp */}
         <motion.a
-          href="https://wa.me/94764970990"
+          href="https://wa.me/94774970990"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
@@ -71,7 +71,7 @@ function Home() {
           <Phone className="w-5 h-5 text-white" />
           <div className="text-left">
             <div className="text-white">WhatsApp</div>
-            <div className="text-green-400">+94 076 497 0990 ↗</div>
+            <div className="text-green-400">+94 077 497 0990 ↗</div>
           </div>
         </motion.a>
 
@@ -95,7 +95,7 @@ function Home() {
 
         {/* LinkedIn */}
         <motion.a
-          href="https://linkedin.com/in/ABHISHEK-APPUHAMY"
+          href="https://www.linkedin.com/in/abhishek-appuhamy-03a983366/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
@@ -115,8 +115,7 @@ function Home() {
 
         {/* GitHub */}
         <motion.a
-          href="https://github.com/abhishekapppuhamyy" // replace with your GitHub profile URL
-          target="_blank"
+          href="https://github.com/AbhishekAppuhamyy" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#1a1a1a] px-4 py-3 rounded-xl"
           whileHover={{

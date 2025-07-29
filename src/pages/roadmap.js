@@ -1,24 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaPhp,
-  FaJava,
-  FaPython,
-  FaReact,
-  FaNodeJs,
-  FaRust,
+  FaHtml5, FaCss3Alt, FaJs, FaPhp, FaJava, FaPython,
+  FaReact, FaNodeJs, FaRust
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiKotlin,
-  SiFlutter,
-  SiGraphql,
-  SiMysql,
+  SiTailwindcss, SiExpress, SiMongodb, SiKotlin,
+  SiFlutter, SiGraphql, SiMysql
 } from "react-icons/si";
 
 const techIcons = {
@@ -83,9 +71,9 @@ const item = {
 
 function Roadmap() {
   return (
-    <div className="min-h-screen py-20 px-6 text-white bg-gradient-to-br from-[#0d0d0d] via-[#1a1a1a] to-[#2c2c2e] flex flex-col items-center">
+    <div className="min-h-screen py-16 px-4 sm:px-6 md:px-10 text-white bg-gradient-to-br from-[#0d0d0d] via-[#1a1a1a] to-[#2c2c2e] flex flex-col items-center">
       <motion.h2
-        className="text-3xl mt-24 md:text-4xl font-bold mb-16 text-center bg-gradient-to-r from-green-400 via-cyan-400 to-lime-400 bg-clip-text text-transparent"
+        className="mt-24 text-2xl sm:text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-green-400 via-cyan-400 to-lime-400 bg-clip-text text-transparent"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -95,7 +83,7 @@ function Roadmap() {
       </motion.h2>
 
       <motion.div
-        className="flex flex-col gap-12 max-w-6xl w-full"
+        className="flex flex-col gap-8 sm:gap-10 max-w-6xl w-full"
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -104,7 +92,7 @@ function Roadmap() {
         {roadmapData.map((itemData) => (
           <motion.div
             key={itemData.year}
-            className="relative p-6 rounded-2xl bg-[#1a1a1a] border border-[#2e2e2e] transition shadow-lg cursor-pointer"
+            className="relative p-4 sm:p-6 rounded-2xl bg-[#1a1a1a] border border-[#2e2e2e] transition shadow-lg cursor-pointer"
             variants={item}
             whileHover={{
               scale: 1.05,
@@ -114,23 +102,21 @@ function Roadmap() {
             }}
             transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
           >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-3 h-3 rounded-full bg-green-400 animate-ping"></div>
-              <h3 className="text-xl font-bold text-green-400">{itemData.year}</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-2.5 h-2.5 rounded-full bg-green-400 animate-ping"></div>
+              <h3 className="text-lg sm:text-xl font-bold text-green-400">{itemData.year}</h3>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Frontend Section */}
               <div>
-                <p className="text-sm text-white mb-2 font-semibold text-left">
-                  Frontend
-                </p>
+                <p className="text-sm text-white mb-2 font-semibold">Frontend</p>
                 {itemData.frontend.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
                     {itemData.frontend.map((tech) => (
                       <motion.span
                         key={tech}
-                        className="flex items-center gap-2 bg-white/10 border border-white text-white px-4 py-2 rounded-full text-sm md:text-base cursor-pointer select-none"
+                        className="flex items-center gap-2 bg-white/10 border border-white text-white px-3 py-2 rounded-full text-xs sm:text-sm md:text-base cursor-pointer select-none"
                         whileHover={{
                           scale: 1.05,
                           rotate: [0, 1, -1, 0],
@@ -138,7 +124,7 @@ function Roadmap() {
                         }}
                         transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
                       >
-                        <span className="text-xl md:text-2xl">{techIcons[tech] || "🔧"}</span>
+                        <span className="text-lg sm:text-xl">{techIcons[tech] || "🔧"}</span>
                         {tech}
                       </motion.span>
                     ))}
@@ -150,15 +136,13 @@ function Roadmap() {
 
               {/* Backend Section */}
               <div>
-                <p className="text-sm text-white mb-2 font-semibold text-left">
-                  Backend
-                </p>
+                <p className="text-sm text-white mb-2 font-semibold">Backend</p>
                 {itemData.backend.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
                     {itemData.backend.map((tech) => (
                       <motion.span
                         key={tech}
-                        className="flex items-center gap-2 bg-white/10 border border-white text-white px-4 py-2 rounded-full text-sm md:text-base cursor-pointer select-none"
+                        className="flex items-center gap-2 bg-white/10 border border-white text-white px-3 py-2 rounded-full text-xs sm:text-sm md:text-base cursor-pointer select-none"
                         whileHover={{
                           scale: 1.05,
                           rotate: [0, 1, -1, 0],
@@ -166,7 +150,7 @@ function Roadmap() {
                         }}
                         transition={{ type: "tween", duration: 0.5, ease: "easeInOut" }}
                       >
-                        <span className="text-xl md:text-2xl">{techIcons[tech] || "🔧"}</span>
+                        <span className="text-lg sm:text-xl">{techIcons[tech] || "🔧"}</span>
                         {tech}
                       </motion.span>
                     ))}

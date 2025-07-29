@@ -36,7 +36,7 @@ function Contact() {
         <ContactCard
           icon={<Phone className="w-5 h-5 text-white" />}
           title="Phone"
-          value="+94 076 497 0990"
+          value="+94 077 497 0990"
           href="tel:+94764970990"
         />
 
@@ -52,7 +52,7 @@ function Contact() {
           icon={<Linkedin className="w-5 h-5 text-white" />}
           title="LinkedIn"
           value="@abhishekappuhamy"
-          href="https://linkedin.com/in/ABHISHEK-APPUHAMY"
+          href="https://www.linkedin.com/in/abhishek-appuhamy-03a983366/"
         />
       </div>
 
@@ -70,7 +70,7 @@ function Contact() {
         />
         <SocialIcon
           icon={<FaWhatsapp className="text-white" />}
-          href="https://wa.me/94764970990"
+          href="https://wa.me/94774970990"
           color="#25D366"
         />
         <SocialIcon
