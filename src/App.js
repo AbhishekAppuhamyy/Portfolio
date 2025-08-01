@@ -16,6 +16,7 @@ import Avrmobileapp from './projects/Avrmobileapp.js';
 import Kasss from './projects/kasss.js';
 import Walletpop from './projects/walletpop.js';
 import Cleanwave from './projects/cleanwave.js';
+import Spark from './projects/Spark.js';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/kasss" element={<Kasss />} />
         <Route path="/walletpop" element={<Walletpop />} />
         <Route path="/cleanwave" element={<Cleanwave />} />
+        <Route path="/spark" element={<Spark />} />
       </Routes>
     </div>
   );

@@ -6,6 +6,7 @@ import kasss from "../assets/kasss.png";
 import avrmobile from "../assets/avrmobileapp.png";
 import avrlankaweb from "../assets/avrlankaweb.png";
 import walletpop from "../assets/walletpop.png";
+import spark from "../assets/spark.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -58,6 +59,12 @@ const projects = [
     description: "Tourism mobile app UI for AVR.",
     image: avrmobile,
     link: "/Avrmobileapp",
+  },
+  {
+    title: "SPARK",
+    description: "Volunteer management system for NGOs.",
+    image: spark,
+    link: "/spark",
   },
 ];
 

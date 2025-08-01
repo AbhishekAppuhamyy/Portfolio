@@ -26,7 +26,7 @@ const skills = [
   { name: "Figma", icon: <FaFigma className="text-green-400" />, level: 90 },
   { name: "WordPress", icon: <FaWordpress className="text-green-400" />, level: 80 },
   { name: "Android Studio", icon: <FaAndroid className="text-green-400" />, level: 80 },
-  { name: "Postman", icon: <SiPostman className="text-green-400" />, level: 70 },
+
 ];
 
 const Skills = () => {
